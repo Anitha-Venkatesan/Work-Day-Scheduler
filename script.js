@@ -1,41 +1,23 @@
-var currentDay=document.getElementById("currentDay");
 
+var hourPlanner= document.querySelectorAll(".hour");
+var textPlanner=document.querySelectorAll(".planner");
+var saveBtn =document.querySelectorAll(".saveBtn");
 
 $(document).ready(function() {
-    var date= new Date();
-    var day;
-    var month;
-     switch (date.getDay()) {
-        case 0:day = "Sunday";break;
-        case 1:day = "Monday"; break;
-        case 2:day = "Tuesday";break;
-        case 3:day = "Wednesday";break;
-        case 4:day = "Thursday";break;
-        case 5:day = "Friday";break;
-        case 6: day = "Saturday";break;
-      } 
-      switch(date.getMonth())
-      {
-        case 0:month = "January";break;
-        case 1:month = "February";break;
-        case 2:month = "March";break;  
-        case 3:month = "April";break;
-        case 4:month = "May";break;
-        case 5:month = "June";break;
-        case 6:month = "July";break;
-        case 7:month = "August";break;
-        case 8:month = "September";break;
-        case 9:month = "October";break;
-        case 10:month = "November";break;
-        case 11:month = "December";     
-      }
-      var val=((day)+" "+(month)+" "+date.getDate());
-      $("#currentDay").text(val);
-      console.log("Day is :" +day);
-      console.log("Month is "+month);
-     
-    
- });
+  $("#currentDay").text(moment().format('dddd')+","+ moment().format('MMMM Do'));
+  var getStorageList =["9","10","11","12","13","14","15","16","17"];
 
-      
+
+  $(".saveBtn").on("click",function(){
+    var btnValue = $(this).attr('value');
+    var textAreaValue = $('#planner-' + btnValue).val();
     
+    console.log(btnValue + "----" + textAreaValue);
+    var setStorage = localStorage.setItem(btnValue,textAreaValue);
+  
+  });
+
+  
+      
+   
+});
