@@ -67,24 +67,10 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
-  padding-top: 25px;
-  padding-left: 50px;
-  
- 
-
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
-/*.planner
-{
-  height:78px;
-  width: 800px;
-  border-bottom: 1px solid #847F7A;
-  border-right: 1px solid #847F7A;
-  border-top: 1px solid #847F7A;
-  border-left: 1px solid #847F7A;
-  margin-bottom: 1px 0 0 0;
-}*/
+
