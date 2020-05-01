@@ -17,6 +17,8 @@ A calendar application that allows the user to save events for business hours of
 
 ### URL
 [Demo URL](https://anitha-venkatesan.github.io/Work-Day-Scheduler/)
+
+
 ![](https://github.com/Anitha-Venkatesan/Work-Day-Scheduler/blob/master/WDS-Demo.gif)
 
 References
